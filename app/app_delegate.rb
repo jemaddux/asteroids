@@ -12,6 +12,9 @@ class AppDelegate
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     @window.setRootViewController(@navigation_controller)
     @window.makeKeyAndVisible
+
+    # With the following we tell the director to present the MenuScene when the game starts.
+    @director << MenuScene.new
     true
   end
 
