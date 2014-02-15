@@ -4,6 +4,13 @@ require 'motion/project/template/ios'
 require 'joybox'
 
 Motion::Project::App.setup do |app|
-  # Use `rake config' to see complete project settings.
-  app.name = 'asteroids'
+  app.name = 'Asteroids'
+
+  # Set the device family to iPad and the interface orientation to landscape left.
+  app.device_family = [:ipad]
+  app.interface_orientations = [:landscape_left]
+
+  # Also set the icon that will be used in iOS Home Screen.
+  app.icons = ['icon.png', 'icon@2x.png']
+  app.prerendered_icon = true
 end
