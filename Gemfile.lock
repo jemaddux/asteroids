@@ -1,13 +1,19 @@
-GEM
-  remote: https://rubygems.org/
+GIT
+  remote: git@github.com:rubymotion/Joybox.git
+  revision: 0b3fe8fc6f14b1e25f5634a6dc5e6bec869e098b
+  branch: master
   specs:
     joybox (1.1.1)
       rake
+
+GEM
+  remote: https://rubygems.org/
+  specs:
     rake (10.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  joybox
+  joybox!
   rake
